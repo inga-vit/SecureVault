@@ -1,0 +1,25 @@
+@page
+@model SecureVault.Pages.LoginModel
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<h1>Log in</h1>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <div>
+        <label asp-for="Username"></label>
+        <input asp-for="Username" autocomplete="username" maxlength="32" required />
+        <span asp-validation-for="Username"></span>
+    </div>
+
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" autocomplete="current-password" maxlength="1024" required />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <button type="submit">Log in</button>
+</form>

@@ -1,0 +1,10 @@
+@page
+@model SecureVault.Pages.AdminDashboardModel
+@{
+    ViewData["Title"] = "Admin dashboard";
+}
+
+<h1>Admin dashboard</h1>
+<p>Welcome, @User.Identity?.Name.</p>
+<p>Registered users: @Model.UserCount</p>
+<p><a asp-page="/UserDashboard">Open user dashboard</a></p>
