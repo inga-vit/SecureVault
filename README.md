@@ -39,9 +39,7 @@ The application requires these JWT settings at startup:
 
 | Setting          | Description                            |
 | ---------------- | -------------------------------------- |
-| `Jwt:SigningKey` | Cryptographically random secret with at|
-|                  | least 32 bytes. Do not store it in     |
-|                  | source control.                        |
+| `Jwt:SigningKey` | Cryptographically random secret with at least 32 bytes. Do not store it in source control. |
 | `Jwt:Issuer`     | Expected issuer for JWTs.              |
 | `Jwt:Audience`   | Expected audience for JWTs.            |
 
@@ -86,8 +84,7 @@ The following endpoints are available to API clients:
 
 | Method and route          | Purpose                                               |
 | ------------------------- | ----------------------------------------------------- |
-| `POST /api/auth/login`    | Exchange a username and password for an access token  |
-|                           | and refresh token.                                    |
+| `POST /api/auth/login`    | Exchange a username and password for an access token and refresh token.  |
 | `POST /api/auth/refresh`  | Rotate a refresh token and obtain a new token pair.   |
 | `POST /api/auth/revoke`   | Revoke the refresh-token family.                      |
 | `GET /api/auth/me`        | Example endpoint requiring a JWT bearer access token. |
